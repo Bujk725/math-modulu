@@ -27,7 +27,7 @@ cotanjantı bulmak için = 13
 import time
 import math
 while True:
-    işlem = int(input("İşleminizi giriniz : "))
+    işlem = input("İşleminizi giriniz : ")
 
     if(işlem == "q"):
         print("işleminiz sonlandırılıyor...")
@@ -35,35 +35,35 @@ while True:
         print("tekrar bekleriz ... ")
         break
 
-    elif(işlem == 1):
+    elif(işlem == "1"):
         sayı1 = int(input(" sayıyı giriniz : "))
         sayı2 = int(input(" sayıyı giriniz : "))
         print("işleminiz yapılıyor...")
         time.sleep(1)
         print("{} + {} = {}".format(sayı1,sayı2,sayı1+sayı2))
 
-    elif(işlem == 2):
+    elif(işlem == "2"):
         sayı1 = int(input(" sayıyı giriniz : "))
         sayı2 = int(input(" sayıyı giriniz : "))
         print("işleminiz yapılıyor...")
         time.sleep(1)
         print("{} - {} = {} ".format(sayı1,sayı2,sayı1-sayı2))
 
-    elif(işlem == 3):
+    elif(işlem == "3"):
         sayı1 = int(input(" sayıyı giriniz : "))
         sayı2 = int(input(" sayıyı giriniz : "))
         print("işleminiz yapılıyor...")
         time.sleep(1)
         print("{} * {} = {} ".format(sayı1,sayı2,sayı1*sayı2))
 
-    elif(işlem == 4):
+    elif(işlem == "4"):
         sayı1 = int(input(" sayıyı giriniz : "))
         sayı2 = int(input(" sayıyı giriniz : "))
         print("işleminiz yapılıyor...")
         time.sleep(1)
         print("{} / {} ={} ".format(sayı1,sayı2,sayı1/sayı2))
 
-    elif(işlem == 5):
+    elif(işlem == "5"):
         sayı1 = int(input(" sayının tabanını giriniz : "))
         sayı2 = int(input(" üssü giriniz : "))
         print("işleminiz yapılıyor...")
@@ -71,7 +71,7 @@ while True:
         x = math.pow(sayı1, sayı2)
         print("{} üssü {} = {} ".format(sayı1,sayı2,math.pow(sayı1,sayı2)))
 
-    elif(işlem == 6):
+    elif(işlem == "6"):
         sayı1 = int(input(" sayıyı giriniz : "))
 
         print("işleminiz yapılıyor...")
@@ -79,26 +79,26 @@ while True:
         x= math.sqrt(sayı1)
         print("{} sayısının karekökü = {} ".format(sayı1,math.sqrt(sayı1)))
 
-    elif(işlem == 7):
+    elif(işlem == "7"):
         sayı1 = int(input(" sayıyı giriniz : "))
         sayı2 = int(input(" logaritmanın tabanını giriniz : "))
         print("işleminiz yapılıyor...")
         time.sleep(1)
         print("{} sayısının {} tabanında logaritması = {} ".format(sayı1,sayı2,math.log(sayı1,sayı2)))
 
-    elif(işlem == 8):
+    elif(işlem == "8"):
         sayı1 = int(input(" Dereceyi giriniz : "))
         print("işlemniz yapılıyor...")
         time.sleep(1)
         print("{} derece = {} radyandır.".format(sayı1,math.degrees(sayı1)))
 
-    elif(işlem == 9):
+    elif(işlem == "9"):
         sayı1 = int(input(" radyanı giriniz : "))
         print("işleminiz yapılıyor...")
         time.sleep(1)
         print("{} radyan {} derecedir.".format(sayı1,math.radians(sayı1)))
 
-    elif(işlem == 10):
+    elif(işlem == "10"):
         a = input( "radyan için = R , derce için = D")
         if(a == "r" or a == "R"):
             sayı1 = int(input(" sayıyı giriniz : "))
@@ -115,7 +115,7 @@ while True:
             print("sin {} = {} ".format(sayı1,y))
 
 
-    elif(işlem == 11):
+    elif(işlem == "11"):
         sayı1 = int(input(" dereceyi giriniz : "))
         print("işleminiz yapılıyor...")
         time.sleep(1)
